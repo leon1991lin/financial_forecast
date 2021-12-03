@@ -10,7 +10,7 @@
 # conn = pymysql.Connect(host='127.0.0.1',
 #                        port=3306,
 #                        user='root',
-#                        passwd='password',
+#                        passwd='{#your_code}',
 #                        db='tradedb',
 #                        charset='utf8')
 # cur = conn.cursor()
@@ -32,7 +32,7 @@ from bs4 import BeautifulSoup
 conn = pymysql.Connect(host='127.0.0.1',
                        port=3306,
                        user='root',
-                       passwd='password',
+                       passwd='{#your_code}',
                        db='tradedb',
                        charset='utf8')
 cur = conn.cursor()
