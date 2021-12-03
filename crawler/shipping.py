@@ -36,7 +36,7 @@ for i in range(len(Baltic_Indexes)):
     print(df)
     print('=============================================')
 
-    engine = create_engine('mysql+pymysql://root:123456@localhost:3306/tfb103d_project')
+    engine = create_engine('mysql+pymysql://root:{#your_code}@localhost:3306/tfb103d_project')
 
     df.to_sql('shipping', engine, if_exists="append", index=False)
 
