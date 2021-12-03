@@ -89,7 +89,7 @@ def natural_gas(data = '2021/10/01'):
     columns = ["crude_index", 'data_date', 'price']
     df = pd.DataFrame(energy, columns=columns)
 
-    engine = create_engine('mysql+pymysql://root:123456@localhost:3306/tfb103d_project')
+    engine = create_engine('mysql+pymysql://root:{#your_code}@localhost:3306/tfb103d_project')
 
     df.to_sql('energy', engine, if_exists="append", index=False)
     return "Successfully!"
