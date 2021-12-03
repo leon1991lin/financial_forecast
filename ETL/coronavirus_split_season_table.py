@@ -5,7 +5,7 @@ class mysql_engine():
  user='root'
  passwd='password'
  host='localhost'
- port = '3306'
+ port = '{#your_code}'
  db_name='covidtest'
  engine = create_engine('mysql+pymysql://{0}:{1}@{2}:{3}/{4}?charset=utf8'.format(user,passwd,host,port,db_name))
 
