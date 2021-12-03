@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 class mysql_engine():
  def __init__(self,db):
   self.user='root'
-  self.passwd='123456'
+  self.passwd='{#your_code}'
   self.host='localhost'
   self.port = '3306'
   self.db_name= db
