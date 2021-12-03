@@ -54,7 +54,7 @@ def DSownership(stockcodes):
             time.sleep(1800)
 
         # 將輸出結果的 DataFrame 儲存至 SQL 資料表中
-        engine = create_engine('mysql+pymysql://root:123456@localhost:3306/tfb103d_project')
+        engine = create_engine('mysql+pymysql://root:{#your_code}@localhost:3306/tfb103d_project')
         df_tmp.to_sql('dsownership', engine, if_exists="append", index=False)
 
         # 將 DataFrame 加入輸出結果的 DataFrame 中
