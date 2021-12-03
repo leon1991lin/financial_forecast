@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 
 class mysql_engine():
  user='root'
- passwd='123456'
+ passwd='{#your_code}'
  host='localhost'
  port = '3306'
  db_name='tfb103d_project'
