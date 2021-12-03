@@ -69,7 +69,7 @@ def ownership(stockcodes):
         time.sleep(sleep_time)
 
     #將輸出結果的 DataFrame 儲存至 SQL 資料表中
-    engine = create_engine('mysql+pymysql://root:123456@localhost:3306/tfb103d_project')
+    engine = create_engine('mysql+pymysql://root:{#your_code}@localhost:3306/tfb103d_project')
     df.to_sql('ownership', engine, if_exists="append", index=False)
 
     return df
